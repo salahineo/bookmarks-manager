@@ -1,4 +1,4 @@
-<h1 align="center">Web Developer & Designer Resources</h1>
+<h1 align="center">Web Developers & Designers Resources</h1>
 
 <p align="center">
   <img src="Mockup.jpg" alt="Responsive Mockup">
