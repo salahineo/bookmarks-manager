@@ -23,4 +23,4 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/favicon.png">
 </head>
-<body data-theme="dark">
+<body data-theme="<?= isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'dark'; ?>">

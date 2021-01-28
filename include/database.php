@@ -2,7 +2,7 @@
 
 // Database Credentials
 const DB_HOST = 'localhost';
-const DB_NAME = 'resources';
+const DB_NAME = 's_resources';
 const DB_USER = 'root';
 const DB_PASSWORD = 'admin';
 const DB_OPTIONS = array(

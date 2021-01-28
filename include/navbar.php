@@ -8,19 +8,23 @@
       </h2>
       <!-- Options -->
       <div class="options">
-        <span id="toggleMood" class="option" title="Toggle Dark / Light Mode">
-          <i class="fas fa-adjust"></i>
+        <span class="option" title="Toggle Dark / Light Mode">
+          <a href="/include/toggle.theme.php">
+           <i class="fas fa-adjust"></i>
+          </a>
         </span>
-        <span id="collapseAll" class="option collapsed" title="Collapse / Expand All Lists" <?= isset($homepage)? '' : 'style="display: none;"' ;?>>
+        <span id="collapseAll"
+              class="option collapsed"
+              title="Collapse / Expand All Lists" <?= isset($homepage) ? '' : 'style="display: none;"'; ?>>
           <i class="fas fa-plus-square"></i>
         </span>
         <span class="option" title="Bookmarks">
-          <a href="http://resources.local/admin/bookmarks/">
+          <a href="/admin/bookmarks/">
            <i class="fas fa-bookmark"></i>
           </a>
         </span>
         <span class="option" title="Links">
-          <a href="http://resources.local/admin/links/">
+          <a href="/admin/links/">
            <i class="fas fa-link"></i>
           </a>
         </span>

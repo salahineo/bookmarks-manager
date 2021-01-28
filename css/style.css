@@ -55,56 +55,6 @@ a:hover {
 
 /* End Global */
 
-/* Start Preloader */
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #06090f;
-  transition: 0.3s;
-  opacity: 1;
-}
-
-.preloader:before {
-  content: '';
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #4679c7;
-  border-top-color: #06090f;
-  border-bottom-color: #06090f;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* End Preloader */
-
 /* Start Nav */
 
 nav {
@@ -268,6 +218,12 @@ table tbody tr {
   background-color: var(--bookmark-body);
 }
 
+table td.link-href {
+  max-width: 400px;
+  word-break: break-word;
+  line-height: 1.3;
+}
+
 table td.control {
   width: 100px;
 }
@@ -377,17 +333,12 @@ body[data-theme='dark'] .dataTables_paginate .pagination .page-item a {
   border-color: var(--border-color);
 }
 
-
 /* End Pagination */
 
 /* Start Datatable Modifications */
 
 div.dataTables_wrapper div.dataTables_length select {
   margin: 0 5px;
-}
-
-html[lang='ar'] div.dataTables_wrapper div.dataTables_filter {
-  text-align: left;
 }
 
 div.dataTables_wrapper div.dataTables_filter label {

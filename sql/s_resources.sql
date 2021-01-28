@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 25, 2021 at 11:21 PM
+-- Generation Time: Jan 28, 2021 at 03:54 PM
 -- Server version: 8.0.22-0ubuntu0.20.04.3
 -- PHP Version: 7.4.3
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `resources`
+-- Database: `s_resources`
 --
 
 -- --------------------------------------------------------
@@ -56,22 +56,23 @@ INSERT INTO `bookmarks` (`bookmark_id`, `bookmark_name`, `bookmark_order`, `book
 (38, 'JS Frameworks', 4, 2),
 (39, 'JS Libraries', 4, 3),
 (40, 'JS Animations', 4, 4),
-(41, 'JS Particles', 6, 1),
-(42, 'JS Carousels', 5, 2),
-(43, 'JS Hover', 5, 3),
-(44, 'JS Scroll', 5, 4),
-(45, 'JS Misc', 8, 1),
-(46, 'JS Sliders', 6, 2),
+(41, 'JS Particles', 5, 4),
+(42, 'JS Carousels', 5, 1),
+(43, 'JS Hover', 6, 1),
+(44, 'JS Scroll', 6, 3),
+(45, 'JS Misc', 6, 2),
+(46, 'JS Sliders', 5, 2),
 (47, 'Code Kits', 6, 3),
 (48, 'Web Templates', 6, 4),
-(49, 'Colors', 12, 1),
+(49, 'Colors', 6, 1),
 (50, 'UI Kits', 7, 2),
-(51, 'Images', 7, 3),
-(52, 'Illustrations', 7, 4),
-(53, 'Icons', 14, 1),
+(51, 'Images', 8, 3),
+(52, 'Illustrations', 7, 3),
+(53, 'Icons', 8, 1),
 (54, 'Font Icons', 8, 2),
-(55, 'Fonts', 8, 3),
-(56, 'Visual Feed', 8, 4);
+(55, 'Fonts', 7, 4),
+(56, 'Visual Feed', 8, 4),
+(58, 'Chrome Extensions', 8, 1);
 
 -- --------------------------------------------------------
 
@@ -290,7 +291,36 @@ INSERT INTO `links` (`link_id`, `bookmark_id`, `link_name`, `link_href`, `link_i
 (221, 56, 'Theme Forest', 'https://themeforest.net/', 'themeforest.ico'),
 (222, 56, 'Awwwards', 'https://www.awwwards.com/', 'awwwards.png'),
 (223, 56, 'SaaS Landing Pages', 'https://saaslandingpage.com/', 'sasslandingpage.png'),
-(224, 56, 'Web Design Inspiration', 'https://www.webdesign-inspiration.com/', 'webdesign-inispiration.ico');
+(224, 56, 'Web Design Inspiration', 'https://www.webdesign-inspiration.com/', 'webdesign-inispiration.ico'),
+(226, 58, 'Advanced Image Search', 'https://chrome.google.com/webstore/detail/advanced-image-search/cahpmepdjiejandeladmhfpapeagobnp', 'advancedimagesearch.png'),
+(227, 58, 'Analyze Page Performance', 'https://chrome.google.com/webstore/detail/analyze-page-performance/hemibacgndhdhkfahkjdedjdgfapmfki', 'analyzepageperformance.png'),
+(228, 58, 'Ad Guard', 'https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg', 'adguard.png'),
+(229, 58, 'Markdown Viewer', 'https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk', 'markdownviewer.png'),
+(230, 58, 'Atom File Icons', 'https://chrome.google.com/webstore/detail/atom-file-icons-web/pljfkbaipkidhmaljaaakibigbcmmpnc', 'atomfileicons.png'),
+(231, 58, 'Cookie Editor', 'https://chrome.google.com/webstore/detail/cookie-editor/iphcomljdfghbkdcfndaijbokpgddeno', 'cookieeditor.png'),
+(232, 58, 'CSS And JS Injection', 'https://chrome.google.com/webstore/detail/css-and-javascript-inject/ckddknfdmcemedlmmebildepcmneakaa', 'cssandjsinjection.png'),
+(233, 58, 'Disable JavaScript', 'https://chrome.google.com/webstore/detail/disable-javascript/jfpdlihdedhlmhlbgooailmfhahieoem', 'jstoggler.png'),
+(234, 58, 'Disconnect', 'https://chrome.google.com/webstore/detail/disconnect/jeoacafpbcihiomhlakheieifhpjdfeo', 'disconnect.png'),
+(235, 58, 'Emmet Review', 'https://chrome.google.com/webstore/detail/emmet-review/epejoicbhllgiimigokgjdoijnpaphdp', 'emmetreview.png'),
+(236, 58, 'Fake Filler', 'https://chrome.google.com/webstore/detail/fake-filler/bnjjngeaknajbdcgpfkgnonkmififhfo', 'fakefiller.png'),
+(237, 58, 'Fontanello', 'https://chrome.google.com/webstore/detail/fontanello/jdlhfjlpaijjhklfadlhbbmpjfddkglc', 'fontanello.png'),
+(238, 58, 'Foxy Proxy', 'https://chrome.google.com/webstore/detail/foxyproxy-standard/gcknhkkoolaabfmlnjonogaaifnjlfnp', 'foxyproxy.png'),
+(239, 58, 'Get Favicon', 'https://chrome.google.com/webstore/detail/get-favicon/gpipahagclehninhhjkhbkliinfofnhe', 'getfavicon.png'),
+(240, 58, 'Go Full Page', 'https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl', 'gofullpage.png'),
+(241, 58, 'Grammerly', 'https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen', 'grammerly.png'),
+(242, 58, 'Site Spell', 'https://chrome.google.com/webstore/detail/site-spell-developer/jipadcefpndjimmmnjkecfjbbigbaekd', 'sitespell.png'),
+(243, 58, 'Hasher', 'https://chrome.google.com/webstore/detail/hasher/kignjplbjlocolcfldfhbonmbblpfbjb', 'hasher.png'),
+(244, 58, 'HTTPS Everywhere', 'https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp', 'httpseverywhere.png'),
+(245, 58, 'JSON Viewer', 'https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh', 'jsonviewer.png'),
+(246, 58, 'Page Ruler', 'https://chrome.google.com/webstore/detail/page-ruler-redux/giejhjebcalaheckengmchjekofhhmal', 'pageruler.png'),
+(247, 58, 'Pesticide', 'https://chrome.google.com/webstore/detail/pesticide-for-chrome-with/neonnmencpneifkhlmhmfhfiklgjmloi', 'pesticide.png'),
+(248, 58, 'User Agent Manager', 'https://chrome.google.com/webstore/detail/user-agent-switcher-and-m/bhchdcejhohfmigjafbampogmaanbfkg', 'useragentmanager.png'),
+(249, 58, 'Vue.js Devtools', 'https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd', 'vuedevtools.png'),
+(250, 58, 'Wappalyzer', 'https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg', 'wappalyzer.png'),
+(251, 58, 'Web Developer Tools', 'https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm', 'webdeveloper.png'),
+(252, 58, 'Web Developer Checklist', 'https://chrome.google.com/webstore/detail/web-developer-checklist/iahamcpedabephpcgkeikbclmaljebjp', 'webdeveloperchecklist.png'),
+(253, 58, 'xDebug', 'https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc', 'xdebug.png'),
+(254, 45, 'Datatables', 'https://datatables.net/', 'datatables.png');
 
 --
 -- Indexes for dumped tables
@@ -317,13 +347,13 @@ ALTER TABLE `links`
 -- AUTO_INCREMENT for table `bookmarks`
 --
 ALTER TABLE `bookmarks`
-  MODIFY `bookmark_id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `bookmark_id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `links`
 --
 ALTER TABLE `links`
-  MODIFY `link_id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
+  MODIFY `link_id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=255;
 
 --
 -- Constraints for dumped tables

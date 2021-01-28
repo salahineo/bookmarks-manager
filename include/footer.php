@@ -31,10 +31,6 @@
   </footer>
   <!-- End Footer -->
 
-  <!-- Start Preloader -->
-  <div id="preloader" class="preloader"></div>
-  <!-- End Preloader -->
-
   <!-- Start Scripts -->
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>

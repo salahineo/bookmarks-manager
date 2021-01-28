@@ -53,8 +53,8 @@ $links = $stmt->fetchAll();
             ?>
             <tr>
               <td><?= ++$virtualIndex; ?></td>
-              <td><?= $link['link_name']; ?></td>
-              <td>
+              <td class="link-name"><?= $link['link_name']; ?></td>
+              <td class="link-href">
                 <a href="<?= $link['link_href']; ?>" target="_blank"><?= $link['link_href']; ?></a>
               </td>
               <td>

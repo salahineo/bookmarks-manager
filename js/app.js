@@ -1,18 +1,3 @@
-/* ------------------------------------------- Preloader ------------------------------------------ */
-
-// Get Preloader
-let preloader = document.getElementById("preloader");
-
-// Fade Out Preloader After 800 ms
-setTimeout(function () {
-  preloader.setAttribute("style", "opacity: 0");
-}, 700);
-
-// Remove Preloader In 1000 ms
-setInterval(function () {
-  preloader.remove();
-}, 1000);
-
 /* ------------------------------------- Check Local Storage ------------------------------------ */
 
 // Check Toggle All Value
@@ -21,17 +6,6 @@ if (localStorage.getItem("bookmarksToggleAll") !== null) {
     toggleAllOn();
   } else {
     toggleAllOff();
-  }
-}
-
-// Check Color Theme Value
-if (localStorage.getItem("bookmarksColorTheme") !== null) {
-  if (localStorage.getItem("bookmarksColorTheme") === "dark") {
-    // Change Body Attribute
-    document.body.setAttribute("data-theme", "dark");
-  } else {
-    // Change Body Attribute
-    document.body.setAttribute("data-theme", "light");
   }
 }
 
@@ -155,33 +129,6 @@ function toggleAllOff() {
   });
   // Change Button Class
   collapseAll.setAttribute("class", "option collapsed");
-}
-
-/* -------------------------------------- Toggle Color Mode ------------------------------------- */
-
-// Get Toggle Mode Nav Icon
-let toggleMode = document.getElementById("toggleMood");
-
-// Local Storage Var
-let modeLocal;
-
-// On Click Trigger Function
-toggleMode.addEventListener("click", toggleTheme);
-
-// Toggle Theme function
-function toggleTheme() {
-  // Check Body Attribute
-  if (document.body.getAttribute("data-theme") === "dark") {
-    // Change Body Attribute
-    document.body.setAttribute("data-theme", "light");
-    // Set Local Storage Value
-    modeLocal = localStorage.setItem("bookmarksColorTheme", "light");
-  } else {
-    // Change Body Attribute
-    document.body.setAttribute("data-theme", "dark");
-    // Set Local Storage Value
-    modeLocal = localStorage.setItem("bookmarksColorTheme", "dark");
-  }
 }
 
 /* -------------------------------------- Trigger Datatable ------------------------------------- */
