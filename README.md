@@ -53,13 +53,20 @@ Here are the guidelines to run this project on your localhost:
 Here are the guidelines to contribute to this project for adding more resources:
 
 - Add any resources you want in your localhost, then export the database file and replace it with the old one which exists in the sql directory
+
 - Pull requests allowed with a change in the database (.sql) file only
+
 - Pull request title should include resource name, resource section
+  
   - Example: `[Bootstrap] -> [CSS Frameworks]`
+
 - It is better to add resource link in the pull request comment section
+  
   - Example: `[URL] -> [https://getbootstrap.com/]`
+
 - Adding to single resource section, or create new resource section in one pull request as it will allow for easier review
-> You can use this [chrome extension](https://chrome.google.com/webstore/detail/get-favicon/gpipahagclehninhhjkhbkliinfofnhe) to download websites favicons for your links
+  
+  > You can use this [chrome extension](https://chrome.google.com/webstore/detail/get-favicon/gpipahagclehninhhjkhbkliinfofnhe) to download websites favicons for your links
 
 ### Technologies
 
