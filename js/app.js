@@ -1,13 +1,7 @@
 /* ------------------------------------- Check Local Storage ------------------------------------ */
 
 // Check Toggle All Value
-if (localStorage.getItem("bookmarksToggleAll") !== null) {
-  if (localStorage.getItem("bookmarksToggleAll") === "on") {
-    toggleAllOn();
-  } else {
-    toggleAllOff();
-  }
-}
+localStorage.getItem("bookmarksToggleAll") !== null && localStorage.getItem("bookmarksToggleAll") === "on" ? toggleAllOn() : toggleAllOff();
 
 /* ----------------------------------------- List Toggle ---------------------------------------- */
 
@@ -35,6 +29,25 @@ function toggleLinks(e) {
     relatedBody.style.maxHeight = relatedBody.scrollHeight + 20 + "px";
     relatedBody.style.padding = "20px";
     e.target.parentElement.innerHTML = "<i class=\"fas fa-minus\"></i>";
+  }
+}
+
+/* --------------------------------- Collapse / Expand All Icon --------------------------------- */
+
+// Get Color Mode Toggle Icon
+let colorModeIcon = document.getElementById("toggleColorMode");
+// On Click Trigger Function
+colorModeIcon.addEventListener("click", changeColorMode);
+
+// Change Color Mode Function
+function changeColorMode() {
+  // Check Current Mode, Then Switch Colors
+  if ("dark" === document.documentElement.getAttribute("data-theme")) {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("BookmarksManagerColorMode", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("BookmarksManagerColorMode", "dark");
   }
 }
 

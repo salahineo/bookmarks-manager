@@ -328,7 +328,7 @@ footer .links a:hover {
   border-color: #007bff !important;
 }
 
-body[data-theme='dark'] .dataTables_paginate .pagination .page-item a {
+[data-theme='dark'] .dataTables_paginate .pagination .page-item a {
   background-color: var(--bookmark-body);
   border-color: var(--border-color);
 }

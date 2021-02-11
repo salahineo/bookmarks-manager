@@ -22,5 +22,15 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/favicon.png">
+
+  <!-- Check Local Storage Color Mode -->
+  <script>
+    // Get Local Storage ITem
+    let localstorageMode = localStorage.getItem("BookmarksManagerColorMode");
+    // Check If Exist Or Not, Then Switch Colors
+    null === localstorageMode
+      ? document.documentElement.setAttribute("data-theme", "dark")
+      : document.documentElement.setAttribute("data-theme", localstorageMode);
+  </script>
 </head>
-<body data-theme="<?= isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'dark'; ?>">
+<body>

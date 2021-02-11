@@ -8,10 +8,8 @@
       </h2>
       <!-- Options -->
       <div class="options">
-        <span class="option" title="Toggle Dark / Light Mode">
-          <a href="/include/toggle.theme.php">
+        <span class="option" id="toggleColorMode" title="Toggle Dark / Light Mode">
            <i class="fas fa-adjust"></i>
-          </a>
         </span>
         <span id="collapseAll"
               class="option collapsed"
