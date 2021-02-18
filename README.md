@@ -18,8 +18,6 @@
 
 This is bookmarks manager application with free resources for web developers and designers. I coded this project to practice on my knowledge of HTML, CSS, Bootstrap, jQuery, jQuery UI, AJAX, PHP, MySQL in a real project.
 
-> Install this application on your environment with a virtual host like `resources.local` to access this application quickly
-
 ### Benefits
 
 Here are some ideas to benefit from this project:
@@ -44,7 +42,7 @@ Here are the guidelines to run this project on your localhost:
 7. Import the `s_resources.sql` file to this database (This file located in `sql` directory)
 8. Open your browser, and type `http://localhost/resources`, to open the home page of the website
 
-> You must make a virtual host like `resources.local` for this project, otherwise you will encounter non-accurate routes. If you don't know how to make virtual hosts in XAMPP, then it is the time to search ^_^
+> You must make a virtual host like `resources.local` for this project, otherwise you will encounter non-accurate routes. If you don't know how to make virtual hosts in XAMPP, follow these instructions for [Windows](https://gist.github.com/salahineo/3ee4333450a13d4cfedf330da191e822#file-xampp-virtual-host-windows-md), or [Linux](https://gist.github.com/salahineo/3ee4333450a13d4cfedf330da191e822#file-xampp-virtual-host-linux-md).
 
 > Don't forget to edit the `/include/database.php` file with your Database credentials
 
