@@ -42,7 +42,7 @@ Here are the guidelines to run this project on your localhost:
 7. Import the `s_resources.sql` file to this database (This file located in `sql` directory)
 8. Open your browser, and type `http://localhost/resources`, to open the home page of the website
 
-> You must make a virtual host like `resources.local` for this project, otherwise you will encounter non-accurate routes. If you don't know how to make virtual hosts in XAMPP, follow these instructions for [Windows](https://gist.github.com/salahineo/3ee4333450a13d4cfedf330da191e822#file-xampp-virtual-host-windows-md), or [Linux](https://gist.github.com/salahineo/3ee4333450a13d4cfedf330da191e822#file-xampp-virtual-host-linux-md).
+> You must make a virtual host like `resources.local` for this project, otherwise you will encounter non-accurate routes. If you don't know how to make virtual hosts in XAMPP, follow these instructions for [Windows](https://gist.github.com/salahineo/996de5788a7c95947557642f0b3be00f), or [Linux](https://gist.github.com/salahineo/3ee4333450a13d4cfedf330da191e822).
 
 > Don't forget to edit the `/include/database.php` file with your Database credentials
 
