@@ -27,7 +27,7 @@
           </a>
         </span>
         <span class="option" title="Visit Github Repo">
-          <a href="https://github.com/salahineo/resources" target="_blank">
+          <a href="https://github.com/salahineo/bookmarks-manager" target="_blank">
             <i class="fab fa-github"></i>
           </a>
         </span>
