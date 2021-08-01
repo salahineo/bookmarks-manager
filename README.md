@@ -9,14 +9,13 @@
 - [Goal](#goal)
 - [Benefits](#benefits)
 - [Installation](#installation)
-- [Contributing Guidelines](#contributing-Guidelines)
 - [Technologies](#technologies)
 - [Contact](#contact)
 - [Copyright and license](#copyright-and-license)
 
 ### Goal
 
-This is bookmarks manager application with free resources for web developers and designers. I coded this project to practice on my knowledge of HTML, CSS, Bootstrap, jQuery, jQuery UI, AJAX, PHP, MySQL in a real project.
+This is bookmarks manager application to save your links. I coded this project to practice on my knowledge of HTML, CSS, Bootstrap, jQuery, jQuery UI, AJAX, PHP, MySQL in a real project.
 
 ### Benefits
 
@@ -46,25 +45,7 @@ Here are the guidelines to run this project on your localhost:
 
 > Don't forget to edit the `/include/database.php` file with your Database credentials
 
-### Contributing Guidelines
-
-Here are the guidelines to contribute to this project for adding more resources:
-
-- Add any resources you want in your localhost, then export the database file and replace it with the old one which exists in the sql directory
-
-- Pull requests allowed with a change in the database (.sql) file only
-
-- Pull request title should include resource name, resource section
-  
-  - Example: `[Bootstrap] -> [CSS Frameworks]`
-
-- It is better to add resource link in the pull request comment section
-  
-  - Example: `[URL] -> [https://getbootstrap.com/]`
-
-- Adding to single resource section, or create new resource section in one pull request as it will allow for easier review
-  
-  > You can use this [chrome extension](https://chrome.google.com/webstore/detail/get-favicon/gpipahagclehninhhjkhbkliinfofnhe) to download websites favicons for your links
+> You can use this [chrome extension](https://chrome.google.com/webstore/detail/get-favicon/gpipahagclehninhhjkhbkliinfofnhe) to download websites favicons for your links
 
 ### Technologies
 
