@@ -1,1 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build & Resources
+node_modules
+dist
+dist-ssr
+*.local
+.env
+
+# (Editor || System) directories and files
+.vscode/*
+!.vscode/extensions.json
 .idea
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# General
+coverage/
+log/
+cache/
+test/
+test-coverage/
