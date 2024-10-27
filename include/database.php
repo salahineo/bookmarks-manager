@@ -4,7 +4,7 @@
 const DB_HOST = 'localhost';
 const DB_NAME = 's_resources';
 const DB_USER = 'root';
-const DB_PASSWORD = 'admin';
+const DB_PASSWORD = 'root';
 const DB_OPTIONS = array(
   PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8'
 );
